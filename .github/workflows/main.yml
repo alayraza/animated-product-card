@@ -36,4 +36,4 @@ jobs:
       run: npm install --global surge
       
     - name: Deploy to Surge
-      run: surge ./build react-red-queen-animation-v110.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+      run: surge ./build react-animated-cart-v110.surge.sh --token ${{ secrets.SURGE_TOKEN }}
