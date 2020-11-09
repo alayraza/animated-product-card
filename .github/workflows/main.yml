@@ -1,39 +1,3 @@
-Skip to content
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@alayraza 
-Learn Git and GitHub without any code!
-Using the Hello World guide, you’ll start a branch, write comments, and open a pull request.
-
-
-alayraza
-/
-react-red-queen-animation
-1
-00
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-Settings
-Create main.yml
-master @alayraza  71436e1
-Deploy Website
-on: push
- build
-Deploy Website
-This run
-Workflow file
-.github/workflows/main.yml
 # This is a basic workflow to help you get started with Actions
 
 name: Deploy Website
@@ -72,4 +36,4 @@ jobs:
       run: npm install --global surge
       
     - name: Deploy to Surge
-      run: surge ./build react-short-animated-cart-v110.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+      run: surge ./build react-red-queen-animation-v110.surge.sh --token ${{ secrets.SURGE_TOKEN }}
