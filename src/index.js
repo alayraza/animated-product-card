@@ -1,8 +1,25 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import App from "./App";
-import * as serviceWorker from "./serviceWorker";
+import React, { Component } from "react";
+import { render } from "react-dom";
+import ParticlesBg from "particles-bg";
+import SignIn from "./components/SignIn";
+import "./style.css";
 
-ReactDOM.render(<App />, document.getElementById("root"));
-
-serviceWorker.register();
+class App extends Component {
+    constructor() {
+      super();
+      this.state = {
+        name: "React"
+      };
+    }
+  
+    render() {
+      return (
+        <div>
+          <SignIn/>
+          <ParticlesBg type="random" bg={true}/>
+        </div>
+      );
+    }
+  }
+  
+  render(<App />, document.getElementById("root"));
